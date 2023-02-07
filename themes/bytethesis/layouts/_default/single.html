@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<div id="main-article" >
+    <div class="main-wrapper">
+        <div class="article">
+
+            <header class="article-header canvas">
+
+                {{ if eq .Params.type "page"}}
+                
+                {{ else }}
+                <span class="article-meta bold uppercase">
+                    <a class="meta-author">{{ $.Param "author.display_name" }}</a> 
+                    /
+                    <time class="meta-time" datetime="2022-10-15"> {{ time.Format "Jan 2, 2006" .PublishDate }} </time>
+                    /
+                    {{ if .Params.categories }}
+                    {{ range .Params.categories }}
+                    <a class="accentued2" href="/categories/{{ . }}">{{ . }}</a>
+                    {{ end }}
+                    {{ end }}
+                </span>
+
+                {{ end }}
+
+                <h1 class="article-title">{{ .Title }}</h1>
+            </header>
+
+
+            <div class="article-content canvas">
+                {{ .Content }}
+            </div>
+
+
+        </div>
+    </div>
+</div>
+{{ end }}

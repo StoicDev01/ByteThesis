@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div id="main-list" class="outer">
+
+    <div class="page-feed inner">
+
+    {{- range .Site.RegularPages -}}
+
+        {{ if ( not ( eq .Params.type "page" ) )}}
+        {{ .Render  "page-block" }}
+        {{ end }}
+
+    {{- end -}}
+
+</div>
+
+{{ end }}

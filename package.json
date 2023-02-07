@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "string": "^3.3.3",
+    "toml": "^3.0.0"
+  },
+  "dependencies": {
+    "lunr": "^2.3.9",
+    "pagefind": "^0.8.1"
+  }
+}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main id="main-list">
+  <div>
+
+    {{ if eq .LinkTitle "Categories" }}
+
+      <div class="taxonomy-feed inner">
+
+        {{ range .Site.Taxonomies.categories }}
+        {{ .Page.Render "taxonomy-block" }}
+        {{ end }}
+
+      </div>
+
+    {{ else }}
+      <div class="page-feed inner">
+    
+      {{ range .Site.Taxonomies.categories.Get ( path.Base .Permalink ) }}
+      {{ .Render "page-block" }}
+      {{ end }}
+
+      </div>
+    {{ end}}
+
+  </div>
+</main>
+{{ end }}

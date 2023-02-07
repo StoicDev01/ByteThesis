@@ -1,0 +1,30 @@
+<div class="page-block shadow2 round">
+    <div class="page-block-wrapper">
+
+        <div class="page-block-tags">
+            <span class="tags">
+                {{ range .Params.categories}}
+                <a class="accentued" href="/categories/{{.}}" >
+                    {{ . }}
+                </a>
+                {{ end }}
+            </span>
+        </div>
+
+        <div class="page-block-header">
+            <h2 class="page-block-title">
+                <a href="{{.Permalink}}">
+                    {{ .Title }}
+                </a>
+            </h2>
+        </div>
+
+        <div class="page-block-excerpt">
+            {{ .Summary }}
+        </div>
+
+        <time class="page-block-date">
+            {{ .Params.Date.Format "January 2, 2006" }}
+        </time>
+    </div>
+</div>

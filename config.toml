@@ -1,0 +1,12 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Bytethesis'
+theme = "bytethesis"
+summaryLength = 25
+
+[taxonomies]
+    category = 'categories'
+    tag = 'tags'
+  
+[outputs]
+    home = [ "HTML", "JSON", "RSS"]

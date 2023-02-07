@@ -1,0 +1,20 @@
+<div class="taxonomy-block shadow2 round">
+    <div class="taxonomy-block-wrapper">
+
+        <div class="taxonomy-block-header">
+            <h2 class="taxonomy-block-title">
+                <a href="{{.Permalink}}" class="accentued uppercase">
+                    {{ .Title }}
+                </a>
+            </h2>
+        </div>
+
+        <div class="taxonomy-block-excerpt">
+            {{ .Params.description }}
+        </div>
+
+        <time class="taxonomy-block-date">
+            {{ .Params.Date.Format "January 2, 2006" }}
+        </time>
+    </div>
+</div>

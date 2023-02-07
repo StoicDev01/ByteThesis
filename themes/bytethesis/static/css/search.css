@@ -1,0 +1,23 @@
+.search-block {
+    background-color: var(--object-color);
+    min-height: 30px;
+    margin-bottom: 20px;
+}
+
+.search-block-wrapper {
+    display: grid;
+    grid-template-columns: 0.01fr 2fr 0.2fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-gap: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    width: 100%;
+}

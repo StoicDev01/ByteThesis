@@ -1,0 +1,22 @@
+@import "general.css";
+@import "article.css";
+@import "search.css";
+
+:root {
+    --object-color: #1b252c;
+    --object-color-2: #2d363b;
+    --object-color-3: #10171d;
+
+    --accent-color : #3fa39e;
+    --accent-color-2 : #3fa365;
+    --text-color: #fff;
+    --text-color-2: #8c9fac;
+
+    --header-nav-gap: 2.8rem;
+
+    --outer: 3.6rem;
+
+    --font-sans: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    --gap: 3.6rem;
+}
+

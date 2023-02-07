@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div id="main-article" class="outer my-auto">
+    
+    <div class="search-block round shadow2 inner">
+        <div class="search-block-wrapper">
+            <div class="icon">
+                <i data-feather="search"></i>
+            </div>
+
+            <input id="search-input" oninput="showSearchResults()" class="search-input" type="text" placeholder="search">
+            <input class="round shadow" type="button" value="Search"></button>
+
+        </div>
+    </div>
+
+    <div id="search-results" class="page-feed inner">
+
+    </div>
+</div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search.js"></script>
+{{ end }}
