@@ -10,3 +10,6 @@ summaryLength = 25
   
 [outputs]
     home = [ "HTML", "JSON", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
