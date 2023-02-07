@@ -360,3 +360,7 @@ h1 {
 *, ::after, ::before {
     box-sizing: border-box;
 }
+
+pre {
+    background-color: var(--object-color) !important;
+}
