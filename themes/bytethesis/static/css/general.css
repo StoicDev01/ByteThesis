@@ -143,7 +143,6 @@
 }
 
 .page-block {
-    max-height: 230px;
     min-height: 160px;
     background-color: var(--object-color);
     display: block;
