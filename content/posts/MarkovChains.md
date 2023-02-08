@@ -27,7 +27,7 @@ Esses são apenas alguns exemplos dos usos mais comuns das cadeias de Markov. H�
 
 ## Conceito
 
-<img src="/markov.png" style="filter: invert(0.9);"/>
+<img class="article-image" src="/markov.png" style="filter: invert(0.9);"/>
 
 Vamos imaginar uma seguinte sequência de estados:
 
@@ -38,7 +38,7 @@ Analisando o histórico de sequências é possível estimar a probabilidade de t
 Uma vez que as probabilidades de transição entre todos os estados são conhecidas, é possível criar uma tabela de transição, que é uma matriz que contém todas as probabilidades de transição entre os estados. Essa tabela de transição é a base para prever a próxima transição em uma cadeia de Markov.
 
 
-<img src="/markovTable.png" style="margin : auto"/>
+<img class="article-image" src="/markovTable.png" style="margin : auto"/>
 
 Implementação simples
 
