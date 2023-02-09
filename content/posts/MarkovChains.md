@@ -40,7 +40,7 @@ Uma vez que as probabilidades de transição entre todos os estados são conheci
 
 <img class="article-image" src="/markovTable.png" style="margin : auto"/>
 
-Implementação simples
+## Implementação simples
 
 Vamos implementar o algoritmo do Markov Chain de maneira simples, com uma transition table de forma diferente, em Typescript, mas o conceito vale para qualquer linguagem, Primeiro precisamos definir uma função que escolhe um estado randômico de uma lista de estados.
 
@@ -63,7 +63,7 @@ class Markov<T>{
     }
 ```
 
-A classe usa um template <T>, ela possui a propriedade data que é um Map de T e array de T. Podemos imaginar T sendo o tipo string, e imaginar o mapa com a seguinte estrutura:
+A classe usa um template <T>, ela possui a propriedade data que é um Map de T e array de T. Podemos imaginar T sendo o tipo string, e imaginar o mapa com a seguinte estrutura ( não adicione ao código):
 
 ```typescript
 data = {
@@ -112,17 +112,17 @@ Agora vamos declarar a função que adiciona os estados ao data dado uma lista d
 vou dar um exemplo desta função, imaginamos que executamos a função com os seguintes parâmetros :
 
 ```typescript
-addStates([“A”, “B”, “C”, “D”, “D”, “C”, “C”, ‘A’])
+addStates(["A", "B", "C", "D", "D", "C", "C", "A"])
 ```
 
 O “data” criado seria:
 
 ```typescript
-data = { 
-    'A' : [ 'B' ], 
-    'B' : [ 'C' ], 
-    'C' : [ 'D', 'C', 'A' ], 
-    'D' : [ 'D', 'C' ] 
+Map(4) {
+  'A' => [ 'B' ],
+  'B' => [ 'C' ],
+  'C' => [ 'D', 'C', 'A' ],
+  'D' => [ 'D', 'C' ]
 }
 ```
 
@@ -137,6 +137,8 @@ Agora, a função que anda a partir de um estado.
             currentState = randomChoice<T>(
                 Array.from(this.data.keys())
             );
+
+            return currentState;
         }
     
         // escolher o proximo baseado nas possibilidades
@@ -152,21 +154,20 @@ Agora, a função que anda a partir de um estado.
 E por fim, a função que gera vários estados em cadeia
 
 ```typescript
-...
-    generate(max : number = 10){
-        let lastState : T | null = null;
+    generate(start : T | null = null, max : number = 10){
+        let lastState : T | null = start;
         let generatedStates : T[] = [];
        
         for (let x = 0; x < max; x++){
-            let currentState : T | undefined;
+            let currentState : T | null = null;
             if (lastState){
                 currentState = this.walk(lastState)
             }
             else{
-                currentState = this.walk();
+                currentState = this.walk(null);
             }
 
-            if (currentState == undefined){
+            if (currentState == null){
                 // chegamos ao fim
                 return generatedStates;
             }
@@ -181,7 +182,7 @@ E por fim, a função que gera vários estados em cadeia
 }
 ```
 
-Exemplo prático
+## Exemplo prático
 
 Vou fazer um programa simples em Typescript que prevê o tempo de um dia usando o Markov Chain e dados históricos anteriores.
 
@@ -211,11 +212,20 @@ markov.addStates([
 ]);
 ```
 
-E por fim, vamos gerar um novo resultado
+E por fim, vamos gerar um novo resultado apartir do dia Ensolarado
 
 ```typescript
-console.log(markov.generate(10))
-// [ 'Ensolarado', 'Ensolarado', 'chovendo', 'Frio' ]
+console.log(markov.generate("Ensolarado",10))
+```
+
+```typescript
+[
+  'Ensolarado', 'Ensolarado',
+  'Nublado',    'Ensolarado',
+  'Ensolarado', 'Nublado',
+  'Ensolarado', 'Nublado',
+  'Nublado',    'Ensolarado'
+]
 ```
 
 Esse foi um exemplo didático de como funciona o Markov Chain e por sua vez um exemplo muito simples, é possível implementar o markov chain de maneira mais otimizada e também usar o Markov Chain de formas muito mais complexas e úteis, como um gerador de nomes únicos que aprende de uma database predefinida, que será o assunto do próximo artigo.
