@@ -9,7 +9,6 @@
 .article-content {
     font-size: var(1.7rem,1.8rem);
     letter-spacing: var(--content-letter-spacing,0);
-    margin-top: 2rem;
 }
 
 .article-image {

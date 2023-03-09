@@ -32,7 +32,6 @@
 }
 
 
-
 /* CLASSES */
 .site {
     display: flex;
@@ -96,18 +95,52 @@
     gap: 2rem;
 }
 
+/* Icons */
+
 .icon {
     background-color: transparent;
     border: none;
     color: var(--text-color);
 }
 
-.icon > * {
+.icon-button {
+    background-color: transparent;
+    border: none;
     color: var(--text-color);
+    cursor : pointer
 }
 
 .icon > * > * {
     color : var(--text-color);
+}
+
+.icon-button > * > * {
+    color : var(--text-color);
+}
+
+.icon-button > *  {
+    fill: var(--text-color);;
+    color : var(--text-color);
+}
+
+.button {
+    cursor : pointer
+}
+
+/* App Menu */
+.appmenu {
+    background-color:  rgba(0, 0, 0, 0.6);
+    min-width: 200px;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.appmenu-wrapper {
+    margin : 10px 10px;
+    text-align: center;
 }
 
 .outer {
@@ -231,8 +264,6 @@
     gap: 25px;
     flex-direction: column;
 }
-
-
 
 .footer-wrapper {
     display: grid;
@@ -362,4 +393,18 @@ h1 {
 
 pre {
     background-color: var(--object-color) !important;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+h2,h3,h4,h6 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+ul {
+    margin-top: 0;
 }
