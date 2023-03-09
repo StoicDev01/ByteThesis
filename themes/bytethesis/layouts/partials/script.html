@@ -14,4 +14,12 @@
     $(".search-button").on("click", function(ev){
         window.document.location = "/search"
     });
+
+    $("#menu-button").on("click", (ev) => {
+        $("#appmenu").css("display", "block")
+    })
+
+    $("#menu-button-close").on("click", (ev) => {
+        $("#appmenu").css("display", "none")
+    })
 </script>
