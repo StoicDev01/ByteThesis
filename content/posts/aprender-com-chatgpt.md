@@ -2,7 +2,7 @@
 title: "Como aprender qualquer assunto usando ChatGPT"
 date: 2023-03-12
 draft: false
-categories: [machine_learning]
+categories: [machine_learning, aprender]
 author: 
     given_name: John
     family_name: Feminella
