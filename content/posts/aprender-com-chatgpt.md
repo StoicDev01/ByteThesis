@@ -1,5 +1,5 @@
 ---
-title: "Como aprender qualquer coisa usando ChatGPT"
+title: "Como aprender qualquer assunto usando ChatGPT"
 date: 2023-03-12
 draft: false
 categories: [machine_learning]
