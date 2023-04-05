@@ -395,7 +395,7 @@ pre {
     background-color: var(--object-color) !important;
 }
 
-p {
+p, video{
     margin-top: 0px;
     margin-bottom: 18px;
 }
