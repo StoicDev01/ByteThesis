@@ -7,4 +7,16 @@
 {{ $title := print .Title }}
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 
+{{ $description := .Description }}
+
+{{ if eq $description "" }}
+    {{ $description = substr (replaceRE "<[^>]*>" "" .Content) 0 160 }}
+{{ end }}
+
+{{ if .IsHome }}
+    {{ $description = .Site.Params.Description }}
+{{ end }}
+
+
 <title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
