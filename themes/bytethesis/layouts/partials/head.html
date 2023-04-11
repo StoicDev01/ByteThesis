@@ -1,8 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="icon" href="/images/Bytethesis.png"> 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <link rel="stylesheet" type="text/css" href="/css/prism.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css" media="print" onload="this.media='all'">
 
 {{ $title := print .Title }}
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}

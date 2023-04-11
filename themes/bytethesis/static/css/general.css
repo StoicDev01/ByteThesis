@@ -18,7 +18,7 @@
 }
 
 #header{
-    background-color: var(--object-color);
+    background-color: var(--header-color);
     z-index: 1;
 }
 
@@ -65,8 +65,12 @@
 
 }
 
+.header-text {
+    color : var(--header-text-color)
+}
+
 .shadow2 {
-    box-shadow: 5px 5px 5px #061216 ;
+    box-shadow: var(--shadow-size) var(--shadow-size) var(--shadow-size) #061216 ;
 }
 
 .round {
@@ -295,6 +299,11 @@
     .search-button-header {
         display: none;
     }
+    .header-actions {
+        display : flex;
+        flex-direction: row;
+        max-height: 50px;
+    }
 }
 
 @media (max-width : 1000px) {
@@ -332,7 +341,7 @@ html {
 }
 
 body {
-    background-image : linear-gradient(0deg, #090e11, #161f25);
+    background-image : linear-gradient(0deg, var(--background-color1), var(--background-color2));
     font-family: var(--font-sans);
     font-size: 1.6rem;
     font-weight: 400;
