@@ -9,17 +9,23 @@
                 {{ if eq .Params.type "page"}}
                 
                 {{ else }}
-                <span class="article-meta bold uppercase">
-                    <a class="meta-author">{{ $.Param "author.display_name" }}</a> 
-                    /
-                    <time class="meta-time" datetime="2022-10-15"> {{ time.Format "Jan 2, 2006" .PublishDate }} </time>
-                    /
-                    {{ if .Params.categories }}
-                        {{ range .Params.categories }}
-                        <a class="accentued2" href="/categories/{{ . }}">{{ . }}</a>
-                        {{ end }}
+
+                    {{ with .Resources.GetMatch "banner.png" }}
+                        <img class="article-content article-image" src="{{.Permalink}}">
                     {{ end }}
-                </span>
+
+
+                    <span class="article-meta bold uppercase">
+                        <a class="meta-author">{{ $.Param "author.display_name" }}</a> 
+                        /
+                        <time class="meta-time" datetime="2022-10-15"> {{ time.Format "Jan 2, 2006" .PublishDate }} </time>
+                        /
+                        {{ if .Params.categories }}
+                            {{ range .Params.categories }}
+                            <a class="accentued2" href="/categories/{{ . }}">{{ . }}</a>
+                            {{ end }}
+                        {{ end }}
+                    </span>
 
                 {{ end }}
 
