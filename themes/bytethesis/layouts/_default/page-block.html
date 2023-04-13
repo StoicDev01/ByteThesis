@@ -20,7 +20,7 @@
         </div>
 
         <div class="page-block-excerpt">
-            {{slicestr .Summary 0 250}}...   
+            {{truncate 250 .Summary}}
         </div>
 
         <time class="page-block-date">
