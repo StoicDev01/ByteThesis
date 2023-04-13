@@ -15,9 +15,9 @@
                     <time class="meta-time" datetime="2022-10-15"> {{ time.Format "Jan 2, 2006" .PublishDate }} </time>
                     /
                     {{ if .Params.categories }}
-                    {{ range .Params.categories }}
-                    <a class="accentued2" href="/categories/{{ . }}">{{ . }}</a>
-                    {{ end }}
+                        {{ range .Params.categories }}
+                        <a class="accentued2" href="/categories/{{ . }}">{{ . }}</a>
+                        {{ end }}
                     {{ end }}
                 </span>
 
