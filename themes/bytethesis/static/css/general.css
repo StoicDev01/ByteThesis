@@ -99,6 +99,10 @@
     gap: 2rem;
 }
 
+.header-buttons{
+    gap : 20px
+}
+
 /* Icons */
 
 .icon {
@@ -290,27 +294,29 @@
 }
 
 @media (max-width : 1900px) {
-    .menu {
-        display: none;
+    .desktop-only{
+        display : flex;
     }
-    .header-menu {
-        display: block;
-    }
-    .search-button-header {
-        display: none;
+    .phone-only {
+        display : none;
     }
     .header-actions {
         display : flex;
         flex-direction: row;
-        max-height: 50px;
     }
 }
 
 @media (max-width : 1000px) {
+    .desktop-only{
+        display : none;
+    }
+    .phone-only {
+        display : flex;
+    }
     .menu {
         display: block;
      }
-    .header-menu {
+    .header-nav {
         display: none;
     }
     .header-brand{
@@ -319,14 +325,8 @@
         grid-column-start: 1;
         justify-content: space-between;
     }
-    .header-actions {
-        display : none;
-    }
     .header-inner {
         grid-template-columns: 1fr;
-    }
-    .search-button-header {
-        display: block;
     }
 }
 
