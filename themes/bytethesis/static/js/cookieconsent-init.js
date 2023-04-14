@@ -42,7 +42,10 @@ cc.run({
     },
 
     onAccept: function (cookie) {
-        enableAdSense();
+
+        if (cookie["level"].length > 0){
+            enableAdSense();
+        }
     },
 
     onChange: function (cookie, changed_preferences) {
@@ -73,8 +76,8 @@ cc.run({
             settings_modal: {
                 title: 'Cookie preferences',
                 save_settings_btn: 'Save settings',
-                accept_all_btn: 'Accept all',
-                reject_all_btn: 'Reject all',
+                accept_all_btn: 'aceitar todos',
+                reject_all_btn: 'rejeitar todos',
                 close_btn_label: 'Close',
                 cookie_table_headers: [
                     {col1: 'Name'},
@@ -82,7 +85,17 @@ cc.run({
                     {col3: 'Expiration'},
                     {col4: 'Description'}
                 ],
-                blocks: []
+                blocks: [
+                    {
+                        title: 'All Cookies',
+                        description: 'enables all cookies',
+                        toggle: {
+                            value: 'all',     // your cookie category
+                            enabled: false,
+                            readonly: false
+                        }
+                    }
+                ]
             },
         }
     }
