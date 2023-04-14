@@ -37,9 +37,6 @@ function constructPageBlock(data){
   <div class="page-block-wrapper">
 
       <div class="page-block-image-wrapper">
-        <a href="${data.permalink}">
-            <img class="page-block-image" src="${data.banner}" class="article-content article-image">
-        </a>
       </div>
 
       <div class="page-block-content-wrapper">
