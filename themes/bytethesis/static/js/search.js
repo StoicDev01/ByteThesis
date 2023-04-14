@@ -31,32 +31,45 @@ function constructPageBlock(data){
     );
   })
 
-  return `<div class="page-block shadow2 round">
+
+  const element =
+`<div class="page-block shadow2 round">
   <div class="page-block-wrapper">
 
-      <div class="page-block-tags">
-          <span class="tags">
-            ${categories.join("\n")}
-          </span>
+      <div class="page-block-image-wrapper">
+        <a href="${data.permalink}">
+            <img class="page-block-image" src="${data.banner}" class="article-content article-image">
+        </a>
       </div>
 
-      <div class="page-block-header">
-          <h2 class="page-block-title">
-              <a href="${data.permalink}">
-                  ${data.title}
-              </a>
-          </h2>
+      <div class="page-block-content-wrapper">
+          <div class="page-block-tags">
+              <span class="tags">
+                ${categories.join("\n")}
+              </span>
+          </div>
+  
+  
+          <div class="page-block-header">
+              <h2 class="page-block-title">
+                    <a href="${data.permalink}">
+                    ${data.title}
+                    </a>
+              </h2>
+          </div>
+  
+          <div class="page-block-excerpt">
+            ${data.content}
+          </div>
+  
+          <time class="page-block-date">
+              ${formated_date}
+          </time>
       </div>
-
-      <div class="page-block-excerpt">
-          ${data.content}
-      </div>
-
-      <time class="page-block-date">
-          ${formated_date}
-      </time>
   </div>
 </div>`
+
+  return element;
 }
 
 function showSearchResults() {
