@@ -435,7 +435,7 @@ h1 {
 }
 
 pre {
-    background-color: var(--object-color) !important;
+    background-color: var(--code-block-color) !important;
 }
 
 p, video{

@@ -27,6 +27,7 @@ function setTheme(theme){
     currentTheme = theme;
 
     let darkTheme = {
+        "--code-block-color" : "#1b252c",
         "--object-color" : "#1b252c",
         "--object-color-2": "#2d363b",
         "--object-color-3": "#10171d",
@@ -47,6 +48,7 @@ function setTheme(theme){
     }
     
     let whiteTheme = {
+        "--code-block-color" : "#1b252c",
         "--background-color1" : "#ffffff",
         "--background-color2" : "#ffffff",
 
