@@ -49,7 +49,7 @@ function constructPageBlock(data){
   
           <div class="page-block-header">
               <h2 class="page-block-title">
-                    <a href="${data.permalink}">
+                    <a class="not-accentued" href="${data.permalink}">
                     ${data.title}
                     </a>
               </h2>

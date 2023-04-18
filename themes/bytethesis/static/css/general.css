@@ -385,8 +385,12 @@ body {
 }
 
 a {
-    color: var(--text-color);
+    color: var(--accent-color);
     text-decoration: none;
+}
+
+a.not-accentued {
+    color: var(--text-color);
 }
 
 a:hover {
