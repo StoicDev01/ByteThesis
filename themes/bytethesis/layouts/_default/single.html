@@ -10,10 +10,10 @@
                 
                 {{ else }}
 
-                    {{ with .Resources.GetMatch "banner.png" }}
-                        <img class="article-content article-image" src="{{.Permalink}}">
+                    {{ $image := .Resources.GetMatch "banner.png" }}
+                    {{ if $image }}
+                        <img class="article-content article-image" src="{{ $image.Permalink }}" alt="{{ .Params.Keyword }}">
                     {{ end }}
-
 
                     <span class="article-meta bold uppercase">
                         <a class="meta-author not-accentued">{{ $.Param "author.display_name" }}</a> 

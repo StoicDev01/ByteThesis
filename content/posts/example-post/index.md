@@ -2,6 +2,7 @@
 title:  "My First post"
 date: 2023-04-05
 draft: false
+keyword: "example-post-keyword"
 categories: [Machine Learning]
 author: 
     given_name: John
@@ -17,8 +18,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ```typescript
     const test = 0;
-
-    const testTring : string = `Test: ${test}`
 ```
 
 [Test Link](https://google.com)
