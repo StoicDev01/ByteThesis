@@ -17,6 +17,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ```typescript
     const test = 0;
+
+    const testTring : string = `Test: ${test}`
 ```
 
 [Test Link](https://google.com)
