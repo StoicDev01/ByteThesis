@@ -30,8 +30,7 @@ function constructPageBlock(data){
       `<a class="accentued" href="/categories/${element}">${element}</a>`
     );
   })
-
-
+  
   const element =
 `<div class="page-block shadow2 round">
   <div class="page-block-wrapper">

@@ -14,7 +14,13 @@
     </div>
 
     <div id="search-results" class="page-feed inner">
+        {{ .Params.q }}
+        {{ $query := .Site.Params.q }}
+        {{ $pages := where .Site.RegularPages "Title" "intersect" (split $query " ") }}
 
+        {{ range $pages }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
     </div>
 </div>
 

@@ -22,8 +22,6 @@
         {{ range .Site.Taxonomies.categories.Get ( path.Base .Permalink ) }}
           {{ partial "post-block.html" . }}
         {{ end }}
-
-
       </div>
     {{ end}}
 
