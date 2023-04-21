@@ -12,10 +12,11 @@
         <div class="page-block-content-wrapper">
             <div class="page-block-tags">
                 <span class="tags">
-                    {{ range .Params.categories}}
-                    <a class="accentued" href="/categories/{{.}}" >
-                        {{ . }}
-                    </a>
+                    {{ range .Params.categories }}
+
+                        <a class="accentued" href='{{ "/categories/" | relLangURL }}{{ . | urlize }}' >
+                           {{ . }}
+                        </a>
                     {{ end }}
                 </span>
             </div>
