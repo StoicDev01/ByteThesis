@@ -1,12 +1,10 @@
 ---
-title:  "My First post"
+title:  "My First post (PT)"
 date: 2023-04-05
 draft: false
 keyword: "example-post-keyword"
-categories: [Machine Learning]
+categories: [machine-learning]
 author: 
-    given_name: John
-    family_name: Feminella
     display_name: "Izkeas"
 ---
 

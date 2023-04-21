@@ -1,0 +1,25 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Bytethesis
+theme: bytethesis
+defaultContentLanguage: en
+
+Params:
+    description: 'Bytethesis um site sobre programação e tecnologia. Aqui você encontrará uma variedade de conteúdos incluindo novidades e tutoriais, o objetivo desse blog é compartilhar conhecimento e aprender no caminho.'
+
+taxonomies:
+    category: categories
+  
+outputs:
+    home: [ "HTML", "JSON", "RSS"]
+
+languages:
+    en:
+        contentDir: content/en
+        languageName: "English"
+    pt:
+        contentDir: content/pt
+        languageName: Português
+
+markup.goldmark.renderer:
+  unsafe: true # Allow HTML in md files

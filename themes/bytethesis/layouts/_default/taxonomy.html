@@ -7,7 +7,7 @@
       <div class="taxonomy-feed inner">
 
         {{ range .Site.Taxonomies.categories }}
-        {{ .Page.Render "taxonomy-block" }}
+          {{ .Page.Render "taxonomy-block" }}
         {{ end }}
 
       </div>
@@ -16,7 +16,7 @@
       <div class="page-feed inner">
     
       {{ range .Site.Taxonomies.categories.Get ( path.Base .Permalink ) }}
-      {{ .Render "page-block" }}
+        {{ .Render "page-block" }}
       {{ end }}
 
       </div>
