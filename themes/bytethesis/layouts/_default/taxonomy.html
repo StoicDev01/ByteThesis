@@ -6,18 +6,23 @@
 
       <div class="taxonomy-feed inner">
 
-        {{ range .Site.Taxonomies.categories }}
-          {{ .Page.Render "taxonomy-block" }}
-        {{ end }}
-
+        <ul>
+          {{ range .Site.Taxonomies.categories }}
+                <li>
+                  <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+                </li>
+          {{ end }}
+      </ul>
+      
       </div>
 
     {{ else }}
       <div class="page-feed inner">
     
-      {{ range .Site.Taxonomies.categories.Get ( path.Base .Permalink ) }}
-        {{ .Render "page-block" }}
-      {{ end }}
+        {{ range .Site.Taxonomies.categories.Get ( path.Base .Permalink ) }}
+          {{ partial "post-block.html" . }}
+        {{ end }}
+
 
       </div>
     {{ end}}

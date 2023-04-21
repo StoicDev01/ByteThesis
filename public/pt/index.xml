@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bytethesis</title>
+    <link>http://example.org/pt/</link>
+    <description>Recent content on Bytethesis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/pt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First post (PT)</title>
+      <link>http://example.org/pt/posts/example-post/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/pt/posts/example-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>Pesquisar</title>
+      <link>http://example.org/pt/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/pt/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sobre</title>
+      <link>http://example.org/pt/sobre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/pt/sobre/</guid>
+      <description>Bytethesis um site sobre programação e tecnologia. Aqui você encontrará uma variedade de conteúdos incluindo novidades e tutoriais, o objetivo desse blog é compartilhar conhecimento e aprender no caminho.
+Autor Email: ryan.costasousa01@gmail.com</description>
+    </item>
+    
+  </channel>
+</rss>

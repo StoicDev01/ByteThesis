@@ -1,7 +1,10 @@
 {{ define "main" }}
 
-{{ range .Pages }}
-{{ .Title }}
-{{ end }}
+    <div id="main-list" class="outer">
+
+        <div class="page-feed inner">
+        {{ partial "post-list.html" . }}
+        </div>
+    </div>
 
 {{ end }}

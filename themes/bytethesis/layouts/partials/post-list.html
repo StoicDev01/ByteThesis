@@ -1,0 +1,7 @@
+{{- range .Site.RegularPages -}}
+
+    {{ if ( not ( eq .Params.type "page" ) )}}
+        {{ partial  "post-block.html" . }}
+    {{ end }}
+
+{{- end -}}

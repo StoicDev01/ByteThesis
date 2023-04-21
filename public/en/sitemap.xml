@@ -1,0 +1,97 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+	  
+	  <url>
+	    <loc>http://example.org/</loc>
+
+		
+	    	<lastmod>2023-04-05</lastmod>
+		
+
+		
+
+		
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>http://example.org/categories/</loc>
+
+		
+	    	<lastmod>2023-04-05</lastmod>
+		
+
+		
+
+		
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>http://example.org/categories/machine-learning/</loc>
+
+		
+	    	<lastmod>2023-04-05</lastmod>
+		
+
+		
+
+		
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>http://example.org/posts/example-post/</loc>
+
+		
+	    	<lastmod>2023-04-05</lastmod>
+		
+
+		
+
+		
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>http://example.org/posts/</loc>
+
+		
+	    	<lastmod>2023-04-05</lastmod>
+		
+
+		
+
+		
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>http://example.org/about/</loc>
+
+		
+
+		
+
+		
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>http://example.org/search/</loc>
+
+		
+
+		
+
+		
+	  </url>
+	  
+  
+</urlset>

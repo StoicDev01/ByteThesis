@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
+
+    <head>
+        {{- partial "head/content.html" . -}}
+        {{- partial "head/scripts.html" . -}}
+    </head>
+
     <body>
         <div class="site">
-            {{- partial "header.html" . -}}
+            {{- partial "body/header.html" . -}}
 
             {{block "main" . }}
             {{end }}
             
-            {{- partial "footer.html" . -}}
-            {{- partial "head_script.html" . -}}
+            {{- partial "body/footer.html" . -}}
         </div>
-        <script src="/js/prism.js"></script>
 
-
-        {{- partial "body_script.html" . -}}
+        {{- partial "body/scripts.html" . -}}
 
     </body>
 </html>
