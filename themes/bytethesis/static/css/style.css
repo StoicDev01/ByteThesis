@@ -2,16 +2,4 @@
 @import "article.css";
 @import "search.css";
 
-:root {
-    --header-nav-gap: 2.8rem;
-    --outer: 3.6rem;
-    --font-sans: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-    --gap: 3.6rem;
-
-    --shadow-size : "5px"
-
-    --background-color1 : "#090e11",
-    --background-color2 : "#161f25",
-
-}
 
